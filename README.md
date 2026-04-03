@@ -1,65 +1,172 @@
-# 📋 Path Master — Copy File Paths Like a Pro
+﻿<p align="center">
+  <img src="assets/icon.png" alt="Path Master Logo" width="128" height="128" />
+</p>
 
-**Stop hunting for file paths. Copy them instantly from anywhere.**
+<h1 align="center">Path Master — Copy File Paths</h1>
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/my-publisher-name.path-master?style=flat-square&color=2D2D30&labelColor=007ACC&label=version)](https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/my-publisher-name.path-master?style=flat-square&color=2D2D30&labelColor=007ACC&label=installs)](https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/my-publisher-name.path-master?style=flat-square&color=2D2D30&labelColor=007ACC&label=rating)](https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master)
-[![License: MIT](https://img.shields.io/badge/license-MIT-007ACC?style=flat-square&color=2D2D30&labelColor=007ACC)](LICENSE)
+<p align="center">
+  <strong>Stop hunting for file paths. Copy them instantly from anywhere.</strong>
+</p>
 
-Path Master adds six path-copy commands to VS Code, accessible from the Explorer, editor tabs, right-click menus, the Command Palette, and keyboard shortcuts — all with multi-file support and configurable formatting.
-
----
-
-## Features
-
-| Command | Description | Shortcut |
-|---|---|---|
-| 📄 Copy File Name | `app.ts` | `Ctrl+Alt+C F` |
-| 📝 Copy File Name (No Extension) | `app` | — |
-| 📂 Copy Relative Path | `src/components/app.ts` | `Ctrl+Alt+C R` |
-| 🗂️ Copy Full Path | `/home/user/project/src/app.ts` | `Ctrl+Alt+C P` |
-| 🐧 Copy Relative Path (Unix) | `src/components/app.ts` (Windows → forward slash) | — |
-| 🐧 Copy Full Path (Unix) | `C:/Users/dev/project/src/app.ts` (Windows → forward slash) | — |
-
----
-
-## Key Advantages
-
-✅ **Multi-file selection** — select 10 files in Explorer and copy all paths at once  
-✅ **Works everywhere** — Explorer, editor text, editor tabs, Command Palette  
-✅ **Smart notifications** — preview of what was copied, dismissible via settings  
-✅ **Cross-platform path formatting** — auto, forward slash, or backslash  
-✅ **Configurable multi-file format** — one per line, comma-separated, or JSON array  
-✅ **Keyboard shortcuts** — three bindings for the most-used commands  
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/my-publisher-name.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=marketplace" alt="Version" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/my-publisher-name.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=installs" alt="Installs" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/my-publisher-name.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=rating" alt="Rating" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-1e1e1e?style=flat-square&labelColor=007ACC" alt="MIT License" />
+  </a>
+</p>
 
 ---
 
-## Screenshots
+## What It Does
 
-> **Screenshot 1:** Explorer right-click → `📋 Path Master` submenu  
-> *(place `assets/screenshot-explorer.png` here)*
+Path Master adds **6 path-copy commands** to VS Code — reachable from the right-click menu, keyboard shortcuts, and the Command Palette — with full multi-file and cross-platform support.
 
-> **Screenshot 2:** Multi-file selection with JSON array output  
-> *(place `assets/screenshot-multi.png` here)*
-
-> **Screenshot 3:** Status bar notification after copy  
-> *(place `assets/screenshot-notification.png` here)*
+```
+Right-click any file  →  📋 Path Master  →  done.
+```
 
 ---
 
-## Demo
+## Commands & Shortcuts
 
-> *(place `assets/demo.gif` here — record with VS Code's screen recorder)*
+| Command | What You Get | Windows | macOS |
+|---|---|---|---|
+| 📄 **Copy File Name** | `app.ts` | `Ctrl+Alt+N` | `Cmd+Alt+N` |
+| 📝 **Copy File Name (No Ext)** | `app` | `Ctrl+Alt+X` | `Cmd+Alt+X` |
+| 📂 **Copy Relative Path** | `src/components/app.ts` | `Ctrl+Alt+R` | `Cmd+Alt+R` |
+| 🐧 **Copy Relative Path (Unix)** | `src/components/app.ts` *(Windows → `/`)* | `Ctrl+Shift+Alt+R` | `Cmd+Shift+Alt+R` |
+| 🗂️ **Copy Full Path** | `C:\Users\dev\project\src\app.ts` | `Ctrl+Alt+F` | `Cmd+Alt+F` |
+| 🐧 **Copy Full Path (Unix)** | `C:/Users/dev/project/src/app.ts` *(Windows → `/`)* | `Ctrl+Shift+Alt+F` | `Cmd+Shift+Alt+F` |
+
+> Shortcuts work when the editor **or** Explorer sidebar is focused.  
+> Reassign any shortcut: `Ctrl+K, Ctrl+S` → search the command name → click ✏️.
+
+---
+
+## Four Ways to Access Commands
+
+### 1 — Right-click menu (Explorer, editor tab, or inside the editor)
+
+```
+📋 Path Master
+ ├── 📄 Copy File Name              Ctrl+Alt+N
+ ├── 📝 Copy File Name (No Ext)     Ctrl+Alt+X
+ ├── 📂 Copy Relative Path          Ctrl+Alt+R
+ ├── 🐧 Copy Relative Path (Unix)   Ctrl+Shift+Alt+R
+ ├── 🗂️  Copy Full Path              Ctrl+Alt+F
+ └── 🐧 Copy Full Path (Unix)       Ctrl+Shift+Alt+F
+```
+
+### 2 — Keyboard shortcuts
+
+Press any shortcut from the table above while the editor or Explorer is focused.
+
+### 3 — Command Palette
+
+`Ctrl+Shift+P` → type `Path Master` → pick a command.
+
+### 4 — Multi-file selection
+
+Hold `Ctrl` (or `Cmd` on macOS), click multiple files in Explorer, then right-click → **Path Master**. All paths are copied at once in your configured format.
+
+---
+
+## Multi-file Output Formats
+
+Given three files selected: `src/app.ts`, `src/index.ts`, `src/utils.ts`
+
+<table>
+<tr>
+<th><code>"newline"</code> (default)</th>
+<th><code>"comma"</code></th>
+<th><code>"array"</code></th>
+</tr>
+<tr>
+<td>
+
+```
+src/app.ts
+src/index.ts
+src/utils.ts
+```
+
+</td>
+<td>
+
+```
+src/app.ts, src/index.ts, src/utils.ts
+```
+
+</td>
+<td>
+
+```json
+[
+  "src/app.ts",
+  "src/index.ts",
+  "src/utils.ts"
+]
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+## Settings
+
+Open `Settings` (`Ctrl+,`) and search **Path Master**, or add to `settings.json`:
+
+```jsonc
+{
+  // Show a notification toast after copying
+  "pathMaster.showNotifications": true,
+
+  // How long the status bar message stays (milliseconds)
+  "pathMaster.notificationDuration": 3000,
+
+  // Separator: "auto" (OS default) | "forward" (/) | "backward" (\)
+  "pathMaster.defaultPathSeparator": "auto",
+
+  // Multi-file format: "newline" | "comma" | "array"
+  "pathMaster.copyMultipleFilesFormat": "newline"
+}
+```
+
+---
+
+## Why Path Master?
+
+| Feature | Path Master | Built-in VS Code | Other Extensions |
+|---|---|---|---|
+| Copy file name | ✅ | ✅ | ✅ |
+| Copy file name **without extension** | ✅ | ❌ | ⚠️ Some |
+| Copy relative path | ✅ | ✅ | ✅ |
+| Copy full path | ✅ | ✅ | ✅ |
+| **Multi-file selection** | ✅ | ❌ | ⚠️ Some |
+| **Unix/Windows path toggle** | ✅ | ❌ | ⚠️ Rare |
+| **Configurable output format** | ✅ | ❌ | ❌ |
+| Shortcuts for all 6 commands | ✅ | ⚠️ 1 only | ⚠️ Limited |
+| Works from editor tabs | ✅ | ❌ | ⚠️ Some |
+| Smart notification preview | ✅ | ❌ | ❌ |
 
 ---
 
 ## Installation
 
-**From the VS Code Marketplace:**
+**From the Marketplace:**
 
 1. Open VS Code
-2. Press `Ctrl+P` and run: `ext install my-publisher-name.path-master`
+2. `Ctrl+P` → run: `ext install my-publisher-name.path-master`
 
 **From the CLI:**
 
@@ -69,143 +176,30 @@ code --install-extension my-publisher-name.path-master
 
 ---
 
-## Usage
-
-### Method 1 — Right-click menu
-
-Right-click any file in the **Explorer sidebar**, an **editor tab**, or inside the **editor text area** → `📋 Path Master` → choose your command.
-
-The submenu is organized into three groups separated by dividers:
-- **Name** — file name with/without extension
-- **Relative** — path relative to workspace root
-- **Full** — absolute file system path
-
-### Method 2 — Command Palette
-
-Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS), type `Path Master`, and select any command.
-
-### Method 3 — Keyboard shortcuts
-
-| Action | Windows / Linux | macOS |
-|---|---|---|
-| Copy File Name | `Ctrl+Alt+C F` | `Cmd+Alt+C F` |
-| Copy Relative Path | `Ctrl+Alt+C R` | `Cmd+Alt+C R` |
-| Copy Full Path | `Ctrl+Alt+C P` | `Cmd+Alt+C P` |
-
-Shortcuts work when the cursor is in the editor **or** when the Explorer sidebar is focused.
-
-### Method 4 — Multi-file selection
-
-1. Hold `Ctrl` (or `Cmd` on macOS) and click multiple files in the Explorer.
-2. Right-click any of the selected files → `📋 Path Master` → choose a command.
-3. All selected paths are copied in your chosen format (see settings below).
-
----
-
-## Settings
-
-```json
-{
-  // Show a notification toast after copying
-  "pathMaster.showNotifications": true,
-
-  // How long the status bar message stays visible (milliseconds)
-  "pathMaster.notificationDuration": 3000,
-
-  // Path separator: "auto" (OS default) | "forward" (/) | "backward" (\)
-  "pathMaster.defaultPathSeparator": "auto",
-
-  // Multi-file output format: "newline" | "comma" | "array"
-  "pathMaster.copyMultipleFilesFormat": "newline"
-}
-```
-
-### Multi-file format examples
-
-Given three selected files: `src/app.ts`, `src/index.ts`, `src/utils.ts`
-
-**`"newline"` (default):**
-```
-src/app.ts
-src/index.ts
-src/utils.ts
-```
-
-**`"comma"`:**
-```
-src/app.ts, src/index.ts, src/utils.ts
-```
-
-**`"array"`:**
-```json
-[
-  "src/app.ts",
-  "src/index.ts",
-  "src/utils.ts"
-]
-```
-
----
-
-## Comparison
-
-| Feature | Path Master | Built-in VS Code | Other Extensions |
-|---|---|---|---|
-| Copy file name | ✅ | ✅ | ✅ |
-| Copy file name without extension | ✅ | ❌ | ⚠️ Some |
-| Copy relative path | ✅ | ✅ | ✅ |
-| Copy full path | ✅ | ✅ | ✅ |
-| Multi-file selection | ✅ | ❌ | ⚠️ Some |
-| Unix/Windows path toggle | ✅ | ❌ | ⚠️ Rare |
-| Configurable output format | ✅ | ❌ | ❌ |
-| Keyboard shortcuts | ✅ | ⚠️ Only 1 | ⚠️ Limited |
-| Works from editor tabs | ✅ | ❌ | ⚠️ Some |
-| Smart notification preview | ✅ | ❌ | ❌ |
-
----
-
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/my-feature`
-3. Commit your changes: `git commit -m 'Add my feature'`
-4. Push to the branch: `git push origin feature/my-feature`
-5. Open a Pull Request on GitHub
-
-Please ensure the TypeScript compiles cleanly (`npm run compile`) before submitting.
+2. `git checkout -b feature/my-feature`
+3. Make your changes — run `npm run compile` to verify they build cleanly
+4. `npm test` — ensure all tests pass
+5. Open a Pull Request
 
 ---
 
-## Issues & Feature Requests
+## Issues & Feedback
 
-Found a bug or have an idea? [Open an issue on GitHub](https://github.com/username/path-master/issues).
+Found a bug or have an idea? [Open an issue on GitHub](https://github.com/Misrilal-Sah/path-master/issues).
 
-Please include:
-- VS Code version
-- Operating system
-- Steps to reproduce (for bugs)
+Please include: VS Code version · OS · steps to reproduce.
 
 ---
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for the full version history.
+See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ---
 
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
-
----
-
-## Support
-
-If Path Master saves you time:
-- ⭐ Star the [GitHub repository](https://github.com/username/path-master)
-- 📝 Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master)
-- 🐛 [Report issues](https://github.com/username/path-master/issues) or suggest improvements
-
----
-
-**Author:** Your Name · [GitHub](https://github.com/username) · [Twitter/X](https://twitter.com/username) · [Marketplace](https://marketplace.visualstudio.com/publishers/my-publisher-name)

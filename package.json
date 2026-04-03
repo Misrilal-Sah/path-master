@@ -8,7 +8,7 @@
   "engines": {
     "vscode": "^1.75.0"
   },
-  "categories": ["Other", "Snippets"],
+  "categories": ["Other", "Keymaps"],
   "keywords": [
     "copy", "path", "file", "clipboard", "explorer",
     "relative path", "full path", "file name", "productivity", "utilities"
