@@ -3,7 +3,11 @@
   "displayName": "Path Master - Copy File Paths",
   "description": "Quickly copy file name, relative path, or full path from anywhere with beautiful UI, keyboard shortcuts, multi-file support, and cross-platform path formatting",
   "version": "1.0.0",
-  "publisher": "my-publisher-name",
+  "publisher": "Misrilal-Sah",
+  "author": {
+    "name": "Misrilal Sah",
+    "url": "https://misril.dev/"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.75.0"
@@ -25,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/Misrilal-Sah/path-master/issues"
   },
-  "homepage": "https://github.com/Misrilal-Sah/path-master#readme",
+  "homepage": "https://misril.dev/",
   "main": "./out/extension.js",
   "activationEvents": [],
   "contributes": {

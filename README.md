@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/my-publisher-name.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=marketplace" alt="Version" />
+  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.path-master">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=marketplace" alt="Version" />
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/my-publisher-name.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=installs" alt="Installs" />
+  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.path-master">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=installs" alt="Installs" />
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=my-publisher-name.path-master">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/my-publisher-name.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=rating" alt="Rating" />
+  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.path-master">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=rating" alt="Rating" />
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-1e1e1e?style=flat-square&labelColor=007ACC" alt="MIT License" />
@@ -166,12 +166,12 @@ Open `Settings` (`Ctrl+,`) and search **Path Master**, or add to `settings.json`
 **From the Marketplace:**
 
 1. Open VS Code
-2. `Ctrl+P` → run: `ext install my-publisher-name.path-master`
+2. `Ctrl+P` → run: `ext install Misrilal-Sah.path-master`
 
 **From the CLI:**
 
 ```bash
-code --install-extension my-publisher-name.path-master
+code --install-extension Misrilal-Sah.path-master
 ```
 
 ---
