@@ -126,20 +126,38 @@
     "keybindings": [
       {
         "command": "path-master.copyFileName",
-        "key": "ctrl+alt+c f",
-        "mac": "cmd+alt+c f",
+        "key": "ctrl+alt+n",
+        "mac": "cmd+alt+n",
+        "when": "editorFocus || explorerViewletFocus"
+      },
+      {
+        "command": "path-master.copyFileNameNoExt",
+        "key": "ctrl+alt+x",
+        "mac": "cmd+alt+x",
         "when": "editorFocus || explorerViewletFocus"
       },
       {
         "command": "path-master.copyRelativePath",
-        "key": "ctrl+alt+c r",
-        "mac": "cmd+alt+c r",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorFocus || explorerViewletFocus"
+      },
+      {
+        "command": "path-master.copyRelativePathUnix",
+        "key": "ctrl+shift+alt+r",
+        "mac": "cmd+shift+alt+r",
         "when": "editorFocus || explorerViewletFocus"
       },
       {
         "command": "path-master.copyFullPath",
-        "key": "ctrl+alt+c p",
-        "mac": "cmd+alt+c p",
+        "key": "ctrl+alt+f",
+        "mac": "cmd+alt+f",
+        "when": "editorFocus || explorerViewletFocus"
+      },
+      {
+        "command": "path-master.copyFullPathUnix",
+        "key": "ctrl+shift+alt+f",
+        "mac": "cmd+shift+alt+f",
         "when": "editorFocus || explorerViewletFocus"
       }
     ],
