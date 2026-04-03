@@ -1,0 +1,200 @@
+{
+  "name": "path-master",
+  "displayName": "Path Master - Copy File Paths",
+  "description": "Quickly copy file name, relative path, or full path from anywhere with beautiful UI, keyboard shortcuts, multi-file support, and cross-platform path formatting",
+  "version": "1.0.0",
+  "publisher": "my-publisher-name",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Other", "Snippets"],
+  "keywords": [
+    "copy", "path", "file", "clipboard", "explorer",
+    "relative path", "full path", "file name", "productivity", "utilities"
+  ],
+  "galleryBanner": {
+    "color": "#2D2D30",
+    "theme": "dark"
+  },
+  "icon": "assets/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Misrilal-Sah/path-master"
+  },
+  "bugs": {
+    "url": "https://github.com/Misrilal-Sah/path-master/issues"
+  },
+  "homepage": "https://github.com/Misrilal-Sah/path-master#readme",
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "path-master.copyFileName",
+        "title": "📄 Copy File Name",
+        "category": "Path Master"
+      },
+      {
+        "command": "path-master.copyFileNameNoExt",
+        "title": "📝 Copy File Name (No Extension)",
+        "category": "Path Master"
+      },
+      {
+        "command": "path-master.copyRelativePath",
+        "title": "📂 Copy Relative Path",
+        "category": "Path Master"
+      },
+      {
+        "command": "path-master.copyFullPath",
+        "title": "🗂️ Copy Full Path",
+        "category": "Path Master"
+      },
+      {
+        "command": "path-master.copyRelativePathUnix",
+        "title": "🐧 Copy Relative Path (Unix Format)",
+        "category": "Path Master"
+      },
+      {
+        "command": "path-master.copyFullPathUnix",
+        "title": "🐧 Copy Full Path (Unix Format)",
+        "category": "Path Master"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "path-master.submenu",
+        "label": "📋 Path Master"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "submenu": "path-master.submenu",
+          "group": "2_workspace@1"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "submenu": "path-master.submenu",
+          "group": "2_files@1"
+        }
+      ],
+      "editor/context": [
+        {
+          "submenu": "path-master.submenu",
+          "group": "9_cutcopypaste@2"
+        }
+      ],
+      "path-master.submenu": [
+        {
+          "command": "path-master.copyFileName",
+          "group": "1_name@1"
+        },
+        {
+          "command": "path-master.copyFileNameNoExt",
+          "group": "1_name@2"
+        },
+        {
+          "command": "path-master.copyRelativePath",
+          "group": "2_relative@1"
+        },
+        {
+          "command": "path-master.copyRelativePathUnix",
+          "group": "2_relative@2",
+          "when": "isWindows"
+        },
+        {
+          "command": "path-master.copyFullPath",
+          "group": "3_full@1"
+        },
+        {
+          "command": "path-master.copyFullPathUnix",
+          "group": "3_full@2",
+          "when": "isWindows"
+        }
+      ],
+      "commandPalette": [
+        { "command": "path-master.copyFileName" },
+        { "command": "path-master.copyFileNameNoExt" },
+        { "command": "path-master.copyRelativePath" },
+        { "command": "path-master.copyFullPath" },
+        { "command": "path-master.copyRelativePathUnix" },
+        { "command": "path-master.copyFullPathUnix" }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "path-master.copyFileName",
+        "key": "ctrl+alt+c f",
+        "mac": "cmd+alt+c f",
+        "when": "editorFocus || explorerViewletFocus"
+      },
+      {
+        "command": "path-master.copyRelativePath",
+        "key": "ctrl+alt+c r",
+        "mac": "cmd+alt+c r",
+        "when": "editorFocus || explorerViewletFocus"
+      },
+      {
+        "command": "path-master.copyFullPath",
+        "key": "ctrl+alt+c p",
+        "mac": "cmd+alt+c p",
+        "when": "editorFocus || explorerViewletFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Path Master",
+      "properties": {
+        "pathMaster.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show notifications when a path is copied to the clipboard."
+        },
+        "pathMaster.notificationDuration": {
+          "type": "number",
+          "default": 3000,
+          "description": "Duration (in milliseconds) to display the status bar notification after copying."
+        },
+        "pathMaster.defaultPathSeparator": {
+          "type": "string",
+          "default": "auto",
+          "enum": ["auto", "forward", "backward"],
+          "enumDescriptions": [
+            "Use the operating system default separator",
+            "Always use forward slash (/)",
+            "Always use backslash (\\)"
+          ],
+          "description": "Default path separator to use when copying paths."
+        },
+        "pathMaster.copyMultipleFilesFormat": {
+          "type": "string",
+          "default": "newline",
+          "enum": ["newline", "comma", "array"],
+          "enumDescriptions": [
+            "One path per line",
+            "Comma separated",
+            "JSON array format"
+          ],
+          "description": "Format to use when copying paths of multiple selected files."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node --test out/test",
+    "lint": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

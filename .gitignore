@@ -1,0 +1,10 @@
+out/
+node_modules/
+.vscode-test/
+*.vsix
+.DS_Store
+
+# Internal / scratch files
+proj1.txt
+run.md
+.planning/
