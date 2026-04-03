@@ -13,15 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.path-master">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=marketplace" alt="Version" />
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.path-master">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=installs" alt="Installs" />
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.path-master">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.path-master?style=flat-square&color=1e1e1e&labelColor=007ACC&label=rating" alt="Rating" />
-  </a>
+
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-1e1e1e?style=flat-square&labelColor=007ACC" alt="MIT License" />
   </a>
